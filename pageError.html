@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title name  -->
+    <title>T R A V S - E R R O R</title>
+
+    <!-- Title logo link  -->
+    <link rel="icon" type="image/x-icon" href="./images/Header_logo.png">
+
+    <!-- Font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Font style poppins link -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+
+    <!-- Font style connection link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <!-- Page error section starts here -->
+    <section class="error-container">
+
+        <div class="error-contents">
+
+            <div class="error-image">
+                <img src="./images/Error_image.jpg">
+            </div>
+
+            <p>The page you're looking for might have been moved, removed, renamed, or might never existed</p>
+
+            <a onclick="history.back();" class="btn">Go Back <span class="fas fa-caret-square-right"></span></a>
+
+        </div>
+
+    </section>
+    <!-- Page error section ends here -->
+
+</body>
+
+<script>
+    /*--------- Ctrl button lock ---------- */
+    document.onkeydown = function (e) {
+        if (e.ctrlKey) {
+            return false;
+        }
+    };
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+</html>
